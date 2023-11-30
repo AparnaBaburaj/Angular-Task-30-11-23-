@@ -1,0 +1,19 @@
+
+<ul>
+    
+    <h2>TASK DETAILS</h2>
+  <li *ngFor="let task of tasks">
+    {{ task.title }} - {{ task.description }}
+    <button (click)="updateTask(task)">Update</button>
+    <button (click)="deleteTask(task.id)">Delete</button>
+  </li>
+</ul>
+
+<form *ngIf="selectedTask" (submit)="updateTask(selectedTask)">
+    <h2>Update Task</h2>
+  <label>Title: <input [(ngModel)]="selectedTask.title"  name="title" required /></label>
+  <br />
+  <label>Description: <input [(ngModel)]="selectedTask.description" name="description" required /></label>
+  <br />
+  <button type="submit">Update Task</button>
+</form>

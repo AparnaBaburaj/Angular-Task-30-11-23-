@@ -1,0 +1,26 @@
+nav {
+    // background-color: orange;
+    background-image: linear-gradient(to right,rgb(240, 176, 176), rgb(225, 145, 145));
+     padding: 15px;
+     text-align: end;
+ }
+ 
+ nav a {
+     color: white;
+     text-decoration: none;
+     padding: 14px 16px;
+     display: inline-block;
+     margin: 0 10px;
+ }
+ 
+ nav a:hover {
+     background-color: white;
+     color: brown;
+ }
+ footer {
+     background-color: #333;
+     color: white;
+     padding: 10px;
+     text-align: center;
+     bottom: 0;
+ }
